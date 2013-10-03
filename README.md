@@ -1,7 +1,7 @@
-SpacePool
-=========
+Space Pool
+==========
 
-My final project for Introduction to Game Programming in the Spring 2013 semester.
+My final project for Introduction to Game Programming in the Spring 2013 semester. Requires [Microsoft XNA Game Studio 4.0](http://www.microsoft.com/en-us/download/details.aspx?id=23714) and [Microsoft Visual Studio 2010](http://www.microsoft.com/visualstudio/eng).
 
 ###BACKSTORY
 In the far flung future, you and your opponent are rival mining companies. The major form of transportation between solar systems is a wormhole network. The destination when entering a wormhole is determined by a unique vibrational vector that acts as an address for a destination.
@@ -32,12 +32,20 @@ When one player has racked up a certain number of points, the game is over and t
 
 ###WEAPONS
 Depending on which weapon you currently have selected, your ship will have a differently colored aura/outline.
+
 *No aura* - Shoots a laser that only affects your "cue ball", which speeds it up in the direction that your laser is pointing.
+
 *Pink aura* - Shoots a laser which makes the planet it hits heavier, up to 4x its initial mass. When a planet is heavier, it will have a translucent black outline.
+
 *Orange aura* - Shoots a laser which makes the planet it hits lighter, up to 0.25x its initial mass. When a planet is lighter, it will have a translucent white outline.
+
 *Pale yellow aura* - Shoots a bullet which only collides with your opponent's ship. If it hits their ship, you slow their move speed and turn speed, and make their cue-hitting laser weaker. This effect persists for a given period of time, then their ship turns back to normal.
+
 *Green aura* - Shoots a "gravitational polarizer" bullet that hits planets. When it hits a planet, that planet's gravitational effect on other planets is negated (so it's still attracted to other planets, but other planets are repelled from it). This effect persists until the same planet is shot with this type of bullet again. When a planet is affected by this, it has a solid yellow outline.
+
 *Light blue aura* - Shoots a "phase inducer" bullet that hits planets. When it hits a planet, that planet can pass through other planets without colliding. This effect persists for a given period of time, then turns off automatically. Planet ownership is still transferred as usual during this effect, if the planet passes through other planets.
+
 *Light purple aura* - Shoots a "gravity canceller" bullet that hits planets. When it hits a planet, that planet doesn't exert a gravitational effect on other planets, and other planets do not exert a gravitational effect on it. This effect persists for a given period of time, then turns off automatically. When a planet is affected by this, it has a solid green outline.
+
 *Time Bomb* - Doesn't have an aura, since it's not in either player's arsenal of weapons, but rather just a separate key to be pressed. When pressed, it negates all planets' velocities to simulate time going backwards. This effect can only be used a certain amount of times per game, and it has a cooldown (so it can't be used too quickly in succession).
 
